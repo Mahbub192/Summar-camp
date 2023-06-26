@@ -81,12 +81,12 @@ const NavBar = () => {
             {navItem}
           </ul>
         </div>
-        <a className=" hover:bg-gray-200 px-3 rounded-xl text-lg   dark:hover:text-black">
+        <div className=" hover:bg-gray-200 px-3 rounded-xl text-lg   dark:hover:text-black">
           <Link to={'/'} className="flex items-center">
             <Lottie className="h-16" animationData={logo} loop={true} />
             <p className="hidden md:block">Yoga & Meditation</p>
           </Link>
-        </a>
+        </div>
       </div>
       <div className="navbar-center hidden lg:flex">
         <ul className="menu menu-horizontal px-1">{navItem}</ul>

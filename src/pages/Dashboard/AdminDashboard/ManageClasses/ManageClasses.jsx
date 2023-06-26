@@ -21,7 +21,7 @@ const ManageClasses = () => {
       console.log(text);
       Swal.fire(text);
       const feed = { id: item?._id, text };
-      fetch(`https://summer-camp-e3153.web.app/instructorFeedback`, {
+      fetch(`http://localhost:4000/instructorFeedback`, {
         method: "PATCH",
         headers: {
           "content-type": "application/json",
@@ -38,7 +38,7 @@ const ManageClasses = () => {
   const handleStatus = (item, role) => {
     console.log("role", role);
     const work = { id: item?._id, role };
-    fetch(`https://summer-camp-e3153.web.app/changePendingClass`, {
+    fetch(`http://localhost:4000/changePendingClass`, {
       method: "PATCH",
       headers: {
         "content-type": "application/json",

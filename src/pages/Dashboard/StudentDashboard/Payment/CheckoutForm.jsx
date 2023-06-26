@@ -73,7 +73,7 @@ const CheckoutForm = ({ price, cart }) => {
 
       const work = { id: cart.classId };
       console.log("work", work);
-      fetch(`https://summer-camp-e3153.web.app/updateStudent`, {
+      fetch(`http://localhost:4000/updateStudent`, {
         method: "PATCH",
         headers: {
           "Content-Type": "application/json",

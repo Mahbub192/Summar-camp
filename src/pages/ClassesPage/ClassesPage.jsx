@@ -14,7 +14,7 @@ const ClassesPage = () => {
   useTitle("ClassesPage")
   const [instructors, setInstructors] = useState([]);
   const [classes] = useClasses();
-  const [,refetch] = useCart()
+  const [cart,refetch] = useCart()
   const { user } = useContext(AuthContext);
   const location = useLocation();
   const navigation = useNavigate()
@@ -25,7 +25,7 @@ const ClassesPage = () => {
     const {_id, instructorName,availableSeats,description,image,instructorEmail,price,studentNumber,time,title} = item
     if (user && user.email ) {
       const cartItem = {classId:_id, instructorName, availableSeats, description,image,instructorEmail,price,studentNumber,time,title, email: user?.email}
-      fetch(`https://summer-camp-e3153.web.app/classSelects`,{
+      fetch(`http://localhost:4000/classSelects`,{
         method: 'POST',
         headers:{
           'content-type': 'application/json'
@@ -37,6 +37,7 @@ const ClassesPage = () => {
         .then((data) => {
           if(data.insertedId){
             refetch()
+            console.log('cart', cart.length);
             Swal.fire({
               icon: 'success',
               title: 'Class added on the cart',

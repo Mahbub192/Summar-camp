@@ -8,7 +8,7 @@ const PaymentHistory = () => {
     const [payedClass, setPayedClass] = useState([])
 
     useEffect(()=>{
-       user?.email && fetch(`https://summer-camp-e3153.web.app/payed-class/${user?.email}`)
+       user?.email && fetch(`http://localhost:4000/payed-class/${user?.email}`)
         .then(res => res.json())
         .then(data =>{
             setPayedClass(data);

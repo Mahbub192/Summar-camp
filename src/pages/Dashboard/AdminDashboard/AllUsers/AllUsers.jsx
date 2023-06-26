@@ -16,7 +16,7 @@ const AllUsers = () => {
     const handleMakeAdmin = (user,role) =>{
         console.log('role',role);
         const work ={ id: user?._id, role}
-        fetch(`https://summer-camp-e3153.web.app/users/admin`, {
+        fetch(`http://localhost:4000/users/admin`, {
             method: 'PATCH',
             headers: {
                 "content-type": "application/json",

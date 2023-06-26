@@ -1,3 +1,4 @@
+import YogaEnhancesYourLife from "../ YogaEnhancesYourLife/ YogaEnhancesYourLife";
 import useTitle from "../../../hooks/useTitle";
 import Banner from "../Banner/Banner";
 import ExtraSection from "../ExtraSection/ExtraSection";
@@ -11,6 +12,7 @@ const Home = () => {
         <div>
             <Banner />
             <PopularClass />
+            < YogaEnhancesYourLife />
             <PopularInstructors />
             <ExtraSection></ExtraSection>
         </div>

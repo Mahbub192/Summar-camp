@@ -15,7 +15,7 @@ const SocalLogin = () => {
         const user = result.user;
         const saveUser = { name: user.displayName, email: user.email, image: user.photoURL };
         console.log('saveUser', saveUser);
-        fetch(`https://summer-camp-e3153.web.app/users`, {
+        fetch(`http://localhost:4000/users`, {
           method: "POST",
           headers: {
             "content-type": "application/json",

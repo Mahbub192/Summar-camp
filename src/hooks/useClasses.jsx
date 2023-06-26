@@ -4,7 +4,7 @@ import { useEffect, useState } from "react";
 const useClasses = () => {
     const [classes, setClasses] = useState([]);
   useEffect(() => {
-    fetch("https://summer-camp-e3153.web.app/popularClasses")
+    fetch("http://localhost:4000/popularClasses")
       .then((res) => res.json())
       .then((data) => {
         setClasses(data);

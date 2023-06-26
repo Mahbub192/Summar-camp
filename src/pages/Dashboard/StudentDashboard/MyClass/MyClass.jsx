@@ -20,7 +20,7 @@ const MyClass = () => {
       confirmButtonText: "Yes, delete it!",
     }).then((result) => {
       if (result.isConfirmed) {
-        fetch(`https://summer-camp-e3153.web.app/classSelects/${item._id}`, {
+        fetch(`http://localhost:4000/classSelects/${item._id}`, {
           method: "DELETE",
         })
           .then((res) => res.json())
