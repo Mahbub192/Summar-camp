@@ -4,6 +4,7 @@ import Banner from "../Banner/Banner";
 import ExtraSection from "../ExtraSection/ExtraSection";
 import PopularClass from "../PopularClass/PopularClass";
 import PopularInstructors from "../PopularInstructors/PopularInstructors";
+import YogaPricingPlan from "../YogaPricingPlan/YogaPricingPlan";
 
 
 const Home = () => {
@@ -13,6 +14,7 @@ const Home = () => {
             <Banner />
             <PopularClass />
             < YogaEnhancesYourLife />
+            <YogaPricingPlan />
             <PopularInstructors />
             <ExtraSection></ExtraSection>
         </div>
