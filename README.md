@@ -1,6 +1,6 @@
 # b712-summer-camp-client-side-Mahbub192
 
-- Live site link : http://localhost:4000/
+- Live site link : https://github.com/Mahbub192/Summar-camp
 
 - On the home page, a banner section, Popular Classes Section shows the 6 classes that have the most number of students, the Popular Instructors Section shows the 6 Instructors that have the most students, and a yoga-related YouTube video has been added.
 
